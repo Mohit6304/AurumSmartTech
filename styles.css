@@ -325,7 +325,7 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
-.about-us-section p {
+.about-us-section p,.expertise-section p,.sustainability-section p,.innovation-section p {
   font-size: 18px; /* Font size for content */
   color: #666;
   margin-bottom: 20px; /* More spacing between paragraphs */

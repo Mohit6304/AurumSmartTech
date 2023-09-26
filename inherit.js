@@ -8,7 +8,7 @@ class MyHeader extends HTMLElement
       <header>
           <div class="header-content">
               <div class="logo" >
-              <a href="/"><img src="/images/lo.png" alt="Company Logo"></a>
+              <a href="/"><img src="/images/logo-removebg-preview.png" alt="Company Logo"></a>
               </div>
               <nav>
                   <ul>
