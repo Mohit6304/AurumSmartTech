@@ -8,7 +8,7 @@ class MyHeader extends HTMLElement
       <header>
           <div class="header-content">
               <div class="logo" >
-              <a href="/"><img src="/images/logo-removebg-preview.png" alt="Company Logo"></a>
+              <a href="/"><img src="/images/lo.png" alt="Company Logo"></a>
               </div>
               <nav>
                   <ul>
@@ -40,18 +40,6 @@ class MyFooter extends HTMLElement {
           </div>
 
           <div class="col-xs-6 col-md-3">
-            <h6>Projects</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">Project-1</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">Project-2</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">Project-3</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Project-4</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Project-5</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Project-6</a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
               <li><a href="/pages/about-us.html">About Us</a></li>
@@ -61,6 +49,30 @@ class MyFooter extends HTMLElement {
               <li><a href="/pages/team.html">Team</a></li>
             </ul>
           </div>
+          <div class="col-xs-6 col-md-3">
+    <h6>Contact Us</h6>
+    <address>
+        <p>
+            <strong>Address:</strong><br>
+            # 6-3-563/29, Somajiguda,<br>
+            Hyderabad - 500 082
+        </p>
+        <p>
+            <strong>Contact No:</strong><br>
+            <a href="tel:+919866558130">+91 9866558130</a> / <a href="tel:+919866558131">31</a>
+        </p>
+        <p>
+            <strong>Landline:</strong><br>
+            <a href="tel:+914048576520">+91 040 48576520</a>
+        </p>
+        <p>
+            <strong>Email:</strong><br>
+            <a href="mailto:info@aurumsmart.com">info@aurumsmart.com</a><br>
+        </p>
+    </address>
+</div>
+
+
         </div>
         <hr>
       </div>
