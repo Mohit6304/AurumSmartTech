@@ -5,24 +5,21 @@ class MyHeader extends HTMLElement
     {
       this.innerHTML = ` 
       <!-- Header Section -->
-      <header>
-          <div class="header-content">
-              <div class="logo" >
-              <a href="/"><img src="/images/lo.png" alt="Company Logo"></a>
-              </div>
-              <nav>
-                  <ul>
-                      <li><a href="/">Home</a></li>
-                      <li><a href="/pages/about-us.html">About Us</a></li>
-                      <li><a href="/pages/projects.html">Projects</a></li>
-                      <li><a href="/pages/products.html">Products</a></li>
-                      <li><a href="/pages/services.html">Services</a></li>
-                      <li><a href="/pages/team.html">Team</a></li>
-                      <li><a href="/pages/contact.html"><b>Contact US</b></a></li>
-                  </ul>
-              </nav>
-          </div>
-      </header> `
+<header class="header">
+<a href="/" class="logo"><img src="/images/lo.png" alt="Company Logo"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/pages/about-us.html">About Us</a></li>
+        <li><a href="/pages/projects.html">Projects</a></li>
+        <li><a href="/pages/products.html">Products</a></li>
+        <li><a href="/pages/services.html">Services</a></li>
+        <li><a href="/pages/team.html">Team</a></li>
+        <li><a href="/pages/contact.html">Contact Us</a></li>
+    </ul>
+</header><br><br><br>
+ `
     }
 }
       
