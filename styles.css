@@ -13,12 +13,10 @@ body {
 
 /* Header Section */
 header {
- /* background: linear-gradient(to right, #FFD700, #FFA500); /* Replace these color codes with your desired light and dark colors */
   background-color: #26272b;
   color: #fff;
   padding: 10px 0;
 }
-
 
 .header-content {
   display: flex;
@@ -28,7 +26,7 @@ header {
 }
 
 .logo img {
-  max-width: 200px;
+  max-width: 30%; /* Make the logo responsive */
 }
 
 nav ul {
@@ -57,6 +55,27 @@ nav ul li a {
 /* Change the link color on hover */
 nav ul li a:hover {
   color: #ff5733; /* Change to your desired hover color */
+}
+
+/* Responsive Header Styles */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .logo {
+    margin-bottom: 20px; /* Add space between logo and navigation links */
+  }
+
+  nav ul {
+    text-align: left; /* Align links to the left */
+  }
+
+  nav ul li {
+    display: block; /* Stack list items vertically */
+    margin-bottom: 10px; /* Add space between list items */
+  }
 }
 
 
@@ -213,6 +232,16 @@ h1, h2 {
   color: #333;
 }
 
+/* Align content within a section to the left */
+.section-left {
+  text-align: left;
+}
+
+/* Align content within a section to the right */
+.section-right {
+  text-align: right;
+}
+
 
 
 /* Rights Reserved Bar */
@@ -223,7 +252,6 @@ h1, h2 {
   font-size: 12px;
 }
 
-/* Your existing CSS styles remain the same */
 
 /* Additional styles for the new sections */
 .product, .service ,.project {
@@ -235,61 +263,76 @@ h1, h2 {
   height: auto;
 }
 
+/* Team */
 
-
-/* Team member container */
-.team-member {
-  display: flex;
-  align-items: center;
+.team-description {
+  background-color: #f5f5f5;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
-/* Team member photo */
-.team-member img {
-  max-width: 150px;
-  height: auto;
-  margin-right: 20px;
-  border-radius: 50%; /* Round the image for a circular shape */
+.team-description p {
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-/* Team member details */
+.team-member {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.team-member img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
 .member-details {
   flex: 1;
 }
 
 .member-details h2 {
-  font-size: 20px;
-  color: #333;
+  font-size: 24px;
+  margin: 0 0 10px;
 }
 
 .member-details p {
-  margin-top: 5px;
-  color: #666;
-  font-size: 16px;
+  margin: 0;
 }
 
-/* Copy common styles from common-styles.css here, if needed */
+/* About Us page */
 
-/* Additional styles for the About Us page */
-.about-us-section {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+/* Common styling for all sections */
+.about-us-section,
+.expertise-section,
+.sustainability-section,
+.innovation-section {
+  background-color: #f8f8f8;
+  padding: 30px 0;
+  border-bottom: 1px solid #e0e0e0; /* Separate sections with a light border */
   text-align: center;
 }
 
-.about-us-section h1 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
+.about-us-section.container {
+  max-width: 800px;
+  margin: 0 auto; /* Center content within the container */
+}
+
+.about-us-section h1,.expertise-section h2,.sustainability-section h2,.innovation-section h2 {
+  font-size: 36px; /* Larger font size for the main heading */
+  color:#0099cc;
+  margin-bottom: 20px;
 }
 
 .about-us-section p {
+  font-size: 18px; /* Font size for content */
   color: #666;
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 20px; /* More spacing between paragraphs */
+  line-height: 1.6;
 }
+
+
 
 /*Contact Us Section*/
 .form-container {
