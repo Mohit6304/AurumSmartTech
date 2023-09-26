@@ -10,17 +10,22 @@ body {
   background-color: #f4f4f4;
 }
 
+
 /* Header Section */
 a {
   color: #000;
 }
 
+/* Header Styles */
 .header {
   background-color: #26272b;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
   position: fixed;
   width: 100%;
   z-index: 3;
+  display: flex; /* Use flexbox to center vertically */
+  justify-content: space-between; /* Keep the existing horizontal alignment */
+  align-items: center; /* Vertically center the content */
 }
 
 .header ul {
@@ -56,6 +61,11 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+.header .logo img {
+  max-width: 30%; /* Resize the logo to 30% of its original size */
+}
+
 
 /* menu */
 
@@ -425,6 +435,7 @@ h1, h2 {
 }
 
 /* Footer Section */
+
 .site-footer
 {
 background-color:#26272b;
